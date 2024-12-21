@@ -14,8 +14,8 @@
         .container {
             display: flex;
             justify-content: center;
-            align-items: flex-start; /* Aligns items at the top */
-            gap: 20px; /* Adds spacing between the boxes */
+            align-items: flex-start;
+            gap: 20px;
             min-height: 100vh;
         }
 
