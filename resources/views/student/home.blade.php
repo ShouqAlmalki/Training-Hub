@@ -8,10 +8,10 @@
 
 <style>
 .box {
-width: 500px;
+width: 700px;
 height: 500px;
 background-color: lightblue;
-border: 2px solid blue;
+border: 2px black solid;
 padding: 10px;
 margin: 20px;
 text-align: center;
@@ -21,16 +21,19 @@ border-radius: 10px;
 
 </style>
 
-<div class= "message box"></div>
+<div class= "box">
+<h1>Messages from supervisor</h1>
+<label for="message" class="form-label">message</label>
 
-<div class="mb-4" class="text-center">
-  <label for="message" class="form-label">message</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+
+<div class="mb-3" class="text-center">
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+
+  </div>
+  <div class="d-grid gap-2">
+  <button class="btn btn-primary" type="button">Send</button>
+
 </div>
 </body>
-
-
-</div>
-
 
 @endsection
