@@ -3,37 +3,56 @@
 
 @section('title', 'home') Home
 @section('content')
-<div class="h-auto d-inline-block" style="width: 120px;">
-<title>Messages from supervisor</title>
 
-<style>
-.box {
-width: 700px;
-height: 500px;
-background-color: lightblue;
-border: 2px black solid;
-padding: 10px;
-margin: 20px;
-text-align: center;
-line-height: 100px;
-border-radius: 10px;
-}
+<link rel="stylesheet" type="text/css" href="{{ asset('/css/style.css') }}" />
 
-</style>
-
-<div class= "box">
-<h1>Messages from supervisor</h1>
-<label for="message" class="form-label">message</label>
+{{--<div class="h-auto d-inline-block" style="width: 120px;">--}}
 
 
-<div class="mb-3" class="text-center">
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+    <title>Messages and Announcements</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Aligns items at the top */
+            gap: 20px; /* Adds spacing between the boxes */
+            min-height: 100vh;
+        }
 
-  </div>
-  <div class="d-grid gap-2">
-  <button class="btn btn-primary" type="button">Send</button>
+        .box {
+            width: 700px;
+            height: 500px;
+            background-color: lightblue;
+            border: 2px black solid;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+        }
 
-</div>
+        .box h1 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Announcements</h1>
+        </div>
+        <div class="box">
+            <h1>Messages from supervisor</h1>
+            <label for="message" class="form-label">Message</label>
+            <div class="mb-3 text-center">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+            </div>
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary" type="button">Send</button>
+            </div>
+        </div>
+    </div>
 </body>
+</html>
+
+
 
 @endsection

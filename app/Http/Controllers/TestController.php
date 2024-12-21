@@ -10,4 +10,9 @@ public function home()
      {
          return view('student.home');
      }
-}
+
+     public function submission()
+          {
+              return view('submission.submission');
+          }
+     }

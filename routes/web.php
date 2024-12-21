@@ -11,6 +11,10 @@ Route::get('/student/home', [\App\Http\Controllers\TestController::class, 'home'
     return view('student.home');
 });
 
+Route::get('/submission/submission', [\App\Http\Controllers\TestController::class, 'submission'])->name('submission.submission');
+    Route::get('/submission', function () {
+    return view('submission.submission');
+});
 
 
 //use Illuminate\Support\Facades\Route;
