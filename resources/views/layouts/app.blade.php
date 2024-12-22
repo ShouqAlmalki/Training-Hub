@@ -35,17 +35,18 @@
 
 </head>
 <body>
-    <div class="navbar">
-        <a href="{{ route('student.home') }}">Home</a>
-         <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="{{route('student.submission')}}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Submissons
-                      </a>
-                      <ul class="dropdown-menu">
-                       <li><a class="dropdown-item" href="{{ route('submission.documents') }}">Submit Documents</a></li>
-                       <li><a class="dropdown-item" href="{{ route('submission.previous') }}">Previous Submissons</a></li>
-                      </ul>
-                    </li>
+ <nav class="navbar">
+                        <div class="container-fluid">
+                          <a class="navbar-brand" href="{{route('views.welcome')}}">Training Hub</a>
+                          <a class="nav-link active" aria-current="page" href="{{route('student.home')}}">Home</a>
+                          <a class="nav-link active" aria-current="page" href="{{route('submission.submission')}}">Submissions</a>
+                          <a class="nav-link active" aria-current="page" href="{{route('student.experience')}}">Experiences</a>
+                          <a class="nav-link active" aria-current="page" href="{{route('student.profile')}}">Profile</a>
+
+</nav>
+
+
+
     </div>
     <div class="content">
          @yield('content')

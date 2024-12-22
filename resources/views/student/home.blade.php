@@ -35,12 +35,14 @@
     </style>
 </head>
 <body>
-<div class="container">
-                        <div class="box">
-                            <h1>Announcements</h1>
-                        </div>
 
+<br><br>
+            <div class="container">
 
+             <div class="box">
+             <h1>Announcements</h1>
+
+             </div>
         <div class="box">
             <h1>Messages from supervisor</h1>
             <label for="message" class="form-label">Message</label>
@@ -52,9 +54,12 @@
                 <button class="btn btn-primary" type="button">Send</button>
 
 
-            </div>
-        </div>
+
+
+      </div>
+     </div>
     </div>
+
 </body>
 </html>
 

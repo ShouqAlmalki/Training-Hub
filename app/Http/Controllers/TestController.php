@@ -25,6 +25,25 @@ public function home()
                     {
                         return view('submission.previous');
                     }
+                    public function appPub()
+                    {
+                        return view('supervisor.appPub');
+                    }
+
+                     public function welcome()
+                     {
+                          return view('welcome');
+                     }
+
+                      public function experience()
+                                          {
+                                               return view('student.experience');
+                                          }
+
+                       public function profile()
+                                           {
+                                                return view('student.profile');
+                                           }
 
                public function submit()
                          {//return view('tasks.edit');
