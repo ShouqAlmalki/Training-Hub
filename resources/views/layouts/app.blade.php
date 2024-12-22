@@ -9,27 +9,25 @@
 
     <style>
         body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-        }
-        .navbar {
-            background-color: #4a90e2;
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-               .navbar a {
-                   color: #fffbd3;
-                   text-decoration: none;
-                   margin: 0 10px;
-                   font-size: 18px;
-               }
-               .navbar a:hover {
-                          text-decoration: underline;
-                      }
+       margin: 0;
+                  font-family: Arial, sans-serif;
+                  background-color: #f0f0f0;
+              }
+              .navbar {
+                  background-color:rgb(10, 23, 38);
+                  color: white;
+                  padding: 10px 20px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+              }
+                     .navbar a {
+                      color:rgb(222, 221, 206);
+                         text-decoration: none;
+                         margin: 0 10px;
+                         font-size: 18px;
+                     }
+
 
     </style>
 
@@ -39,7 +37,7 @@
                         <div class="container-fluid">
                           <a class="navbar-brand" href="{{route('views.welcome')}}">Training Hub</a>
                           <a class="nav-link active" aria-current="page" href="{{route('student.home')}}">Home</a>
-                          <a class="nav-link active" aria-current="page" href="{{route('submission.submission')}}">Submissions</a>
+                          <a class="nav-link active" aria-current="page" href="{{route('student.submission')}}">Submissions</a>
                           <a class="nav-link active" aria-current="page" href="{{route('student.experience')}}">Experiences</a>
                           <a class="nav-link active" aria-current="page" href="{{route('student.profile')}}">Profile</a>
 

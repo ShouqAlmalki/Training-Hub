@@ -33,27 +33,28 @@
     <body>
     <div class="container">
      <div class="box">
-     <h1>Submit Documents</h1>
+     <h1>Report submission</h1>
       <form class="form-control" action="{{route('submission.documents',1)}}">
       @csrf
       <div class="mb-3">
-       <label for="Types">Type :</label>
+       <label for="Types">type of report</label>
         <input list="Types" name="Type" id="Type" class="form-control">
           <datalist id="Types">
-            <option value="Plan form">
-             <option value="Joining form">
-              <option value="Weekly report">
-               <option value="Final report">
+            <option value="Final">
+             <option value="Weekly">
+              <option value="Joining">
+               <option value="Plan">
                 </datalist>
                   </div>
                    <br><br>
+                   <label for="Types">upload file</label>
                      <div class="input-group">
                        <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
-                        <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Choose File</button>
+                        <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04"></button>
                           </div>
                             <br><br>
-                              <button class="btn btn-warning">Cancel</button>
-                               <button class="btn btn-success" onclick="submit()">Submit</button>
+                              {{--<button class="btn btn-warning">Cancel</button>--}}
+                               {{--<button class="btn btn-success" onclick="submit()">Submit</button>--}}
                               </form>
                             </div>
 

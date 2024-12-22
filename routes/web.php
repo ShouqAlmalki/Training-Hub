@@ -2,9 +2,24 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TestController;
+use App\Http\Controllers\SuperController;
+use App\Http\Controllers\AuthController;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
+
+Route::get('/', function () {return view('welcome');})->name('welcome');
+
+Route::get('signup',[AuthController::class,'signup'])->name('auth.signup');
+
+Route::post('signup',[AuthController::class,'signupPost'])->name('auth.signup.post');
+
+Route::get('signin',[AuthController::class,'signin'])->name(name: 'auth.signin');
+
+Route::post('signin',[AuthController::class,'signinPost'])->name('auth.signin.post');
 
 //Route::get('/welcome', [\App\Http\Controllers\TestController::class, 'welcome'])->name('welcome');
     Route::get('/welcome', function () {
