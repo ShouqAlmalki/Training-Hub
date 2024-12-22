@@ -19,7 +19,7 @@
             min-height: 100vh;
         }
 
-        .box {
+        .box-1 {
             width: 700px;
             height: 500px;
             background-color: lightblue;
@@ -28,6 +28,17 @@
             text-align: center;
             border-radius: 10px;
         }
+
+        .box-2 {
+                    width: 700px;
+                    height: 500px;
+                    background-color: lightblue;
+                    border: 2px black solid;
+                    padding: 10px;
+                    text-align: center;
+                    border-radius: 10px;
+                }
+
 
         .box h1 {
             margin-top: 0;
@@ -38,32 +49,24 @@
 
 <br><br>
             <div class="container">
-
-             <div class="box">
-             <h1>Messages from supervisor</h1>
+             <div class="box-1">
+             <h1>Announcements</h1>
+             </div>
+             <div class="box-2">
+            <h1>Messages from supervisor</h1>
              </div>
              <label for="message" class="form-label">Message</label>
-
-                         <div class="mb-3 text-center">
-                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
-                         </div>
-                         <div class="d-grid gap-2">
-                             <button class="btn btn-primary" type="button">Send</button>
-
-        </div>
-        <div class="box">
-            <h1>Announcements</h1>
-            </div>
-
-
-
+              <div class="mb-3 text-center">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+             </div>
+             <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="button">Send</button>
+           </div>
       </div>
      </div>
     </div>
 
 </body>
 </html>
-
-
-
 @endsection
+

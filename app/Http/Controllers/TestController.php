@@ -40,9 +40,9 @@ public function home()
                                                return view('student.experience');
                                           }
 
-                       public function profile()
+                       public function stuaccount()
                        {
-                       return view('student.profile');
+                       return view('student.stuaccount');
                        }
                        public function reviewing()
                        {
