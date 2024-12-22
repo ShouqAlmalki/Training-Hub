@@ -40,19 +40,20 @@
             <div class="container">
 
              <div class="box">
-             <h1>Announcements</h1>
-
+             <h1>Messages from supervisor</h1>
              </div>
+             <label for="message" class="form-label">Message</label>
+
+                         <div class="mb-3 text-center">
+                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                         </div>
+                         <div class="d-grid gap-2">
+                             <button class="btn btn-primary" type="button">Send</button>
+
+        </div>
         <div class="box">
-            <h1>Messages from supervisor</h1>
-            <label for="message" class="form-label">Message</label>
-
-            <div class="mb-3 text-center">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+            <h1>Announcements</h1>
             </div>
-            <div class="d-grid gap-2">
-                <button class="btn btn-primary" type="button">Send</button>
-
 
 
 

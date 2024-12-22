@@ -41,13 +41,21 @@ public function home()
                                           }
 
                        public function profile()
-                                           {
-                                                return view('student.profile');
-                                           }
-                                           public function reviewing()
-                                                                                      {
-                                                                                           return view('supervisor.reviewing');
-                                                                                      }
+                       {
+                       return view('student.profile');
+                       }
+                       public function reviewing()
+                       {
+                       return view('supervisor.reviewing');
+                       }
+                       public function suphome()
+                       {
+                       return view('supervisor.suphome');
+                       }
+                       public function messaging()
+                       {
+                       return view('supervisor.messaging');
+                       }
 
                public function submit()
                          {//return view('tasks.edit');

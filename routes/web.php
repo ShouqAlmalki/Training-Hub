@@ -72,6 +72,17 @@ Route::get('/supervisor/appPub', [\App\Http\Controllers\TestController::class, '
     return view('supervisor.appPub');
 });
 
+Route::get('/supervisor/suphome', [\App\Http\Controllers\TestController::class, 'suphome'])->name('supervisor.suphome');
+    Route::get('/supervisor', function () {
+    return view('supervisor.suphome');
+});
+
+Route::get('/supervisor/messaging', [\App\Http\Controllers\TestController::class, 'messaging'])->name('supervisor.messaging');
+    Route::get('/supervisor', function () {
+    return view('supervisor.messaging');
+});
+
+
 //use Illuminate\Support\Facades\Route;
 //use App\Http\Controllers\TestController;
 

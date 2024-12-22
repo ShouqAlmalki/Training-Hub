@@ -41,14 +41,14 @@
 
              <div class="box">
                 <h1 style="color: #006392;">Send Announcements</h1>
-               
+
 
                 <style>
                     #inputTitle::placeholder, #inputDescription::placeholder {
                       font-size: 12px; /* يمكنك تعديل الحجم هنا حسب الحاجة */
                     }
                   </style>
-                  
+
                   <form>
                     <div class="row mb-3">
                       <label for="inputTitle" class="col-sm-2 col-form-label" style="text-align: left;">Title</label>
@@ -63,7 +63,7 @@
                       </div>
                     </div>
                   </form>
-                  
+
 
                   <div class="d-flex justify-content-between">
                     <label for="inputSection" class="form-label" style="text-align: left; font-size: 14px;">Section</label>
@@ -74,13 +74,13 @@
                       <option value="3">Three</option>
                     </select>
                   </div>
-                 
+
 
                   <div class="d-grid gap-2 d-md-flex justify-content-md-end" style="margin-top: 20px;">
                     <button class="btn btn-primary" type="button" style="background-color: #006392; font-size: 12px;">SEND</button>
                   </div>
-                  
-                  
+
+
 
 
              </div>
@@ -94,8 +94,8 @@
                     <option value="3">Three</option>
                 </select>
             </div>
-            
-          
+
+
 
             <label for="message" class="form-label"></label>
 
@@ -130,5 +130,5 @@
 
 </body>
 </html>
-  
+
 @endsection

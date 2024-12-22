@@ -1,3 +1,9 @@
+@extends('layouts.app')
+
+
+@section('title', 'reviewing')
+@section('content')
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -25,5 +31,6 @@
   </body>
 </html>
 
+@endsection
 
 
