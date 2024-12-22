@@ -1,14 +1,9 @@
 @extends('layouts.app')
 
+@section('title', 'Report Submission')
 
-@section('title', 'submission') Submissions
 @section('content')
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Report Submission</title>
+<div class="container">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -37,22 +32,17 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 14px;
+            text-decoration: none;
         }
     </style>
-</head>
-<body>
-    <div class="container">
-        <div class="card">
-            <span>Submit Reports</span>
-            <button class="button" onclick="submit" href="{{route('submission.documents')}}">Submit</button>
-        </div>
-        <div class="card">
-            <span>Previous Submissions</span>
-            <button class="button" onclick="view" href="{{route('submission.previous')}}">View</button>
-        </div>
+    <div class="card">
+        <span>Submit Reports</span>
+        <a class="button" href="{{ route('submission.documents') }}">Submit</a>
     </div>
-</body>
-</html>
-
-
+    <div class="card">
+        <span>Previous Submissions</span>
+        <a class="button" href="{{ route('submission.previous') }}">View</a>
+    </div>
+</div>
 @endsection
+

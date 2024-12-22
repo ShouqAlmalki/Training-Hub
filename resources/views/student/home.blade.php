@@ -7,7 +7,7 @@
 {{--<link rel="stylesheet" type="text/css" href="{{ asset('/css/style.css') }}" />--}}
 
 {{--<div class="h-auto d-inline-block" style="width: 120px;">--}}
-
+@csrf
     <br><br>
     <title>Messages and Announcements</title>
     <style>

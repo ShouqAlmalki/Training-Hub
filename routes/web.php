@@ -47,6 +47,11 @@ Route::get('/submission/previous', [\App\Http\Controllers\TestController::class,
     return view('submission.previous');
 });
 
+Route::get('/supervisor/reviewing', [\App\Http\Controllers\TestController::class, 'reviewing'])->name('supervisor.reviewing');
+    Route::get('/supervisor', function () {
+    return view('supervisor.reviewing');
+});
+
 Route::get('/supervisor/appPub', [\App\Http\Controllers\TestController::class, 'appPub'])->name('supervisor.appPub');
     Route::get('/supervisor', function () {
     return view('supervisor.appPub');

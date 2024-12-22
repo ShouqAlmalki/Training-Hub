@@ -44,6 +44,10 @@ public function home()
                                            {
                                                 return view('student.profile');
                                            }
+                                           public function reviewing()
+                                                                                      {
+                                                                                           return view('supervisor.reviewing');
+                                                                                      }
 
                public function submit()
                          {//return view('tasks.edit');
