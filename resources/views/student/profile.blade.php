@@ -5,6 +5,7 @@
 @section('content')
 
 <!-- resources/views/profile.blade.php -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
