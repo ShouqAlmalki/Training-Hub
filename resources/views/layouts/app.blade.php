@@ -39,7 +39,8 @@
                           <a class="nav-link active" aria-current="page" href="{{route('student.home')}}">Home</a>
                           <a class="nav-link active" aria-current="page" href="{{route('student.submission')}}">Submissions</a>
                           <a class="nav-link active" aria-current="page" href="{{route('student.experience')}}">Experiences</a>
-                          <a class="nav-link active" aria-current="page" href="{{route('student.profile')}}">Profile</a>
+                          <a class="nav-link active" aria-current="page" href="{{route('student.stuaccount')}}">Personal Account</a>
+
 
 </nav>
 
