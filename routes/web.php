@@ -41,9 +41,9 @@ Route::get('/student/experience', [\App\Http\Controllers\TestController::class, 
     return view('student.experience');
 });
 
-Route::get('/student/profile', [\App\Http\Controllers\TestController::class, 'profile'])->name('student.profile');
+Route::get('/student/stuaccount', [\App\Http\Controllers\TestController::class, 'stuaccount'])->name('student.stuaccount');
     Route::get('/student', function () {
-    return view('student.profile');
+    return view('student.stuaccount');
 });
 
 Route::get('/submission/documents', [\App\Http\Controllers\TestController::class, 'documents'])->name('submission.documents');
