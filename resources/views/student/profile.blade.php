@@ -104,7 +104,7 @@
         </div>
 
         <div class="button-group mt-4">
-            <button type="submit" class="btn btn-save">SAVE</button>
+            <button type="submit" class="btn btn-success">SAVE</button>
             <button type="button" class="btn btn-cancel">CANCEL</button>
         </div>
     </form>
