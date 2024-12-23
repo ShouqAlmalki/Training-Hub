@@ -8,7 +8,7 @@ class TestController extends Controller
 {
 public function home()
      {
-         return view('student.home');
+         return view('student.stuHome');
      }
 
      public function submission()

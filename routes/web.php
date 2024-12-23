@@ -26,10 +26,8 @@ Route::post('signin',[AuthController::class,'signinPost'])->name('auth.signin.po
     return view('welcome');
 })->name('views.welcome');
 
-Route::get('/student/home', [\App\Http\Controllers\TestController::class, 'home'])->name('student.home');
-    Route::get('/home', function () {
-    return view('student.home');
-});
+use App\Http\Controllers\StudentController;
+Route::get('stuHome',[StudentController::class, 'stuHome'])->name('student.stuHome');
 
 Route::get('/student/submission', [\App\Http\Controllers\TestController::class, 'submission'])->name('student.submission');
     Route::get('/student', function () {

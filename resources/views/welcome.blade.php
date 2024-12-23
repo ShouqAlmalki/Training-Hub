@@ -47,7 +47,7 @@
 
      <div class="col">
           <div class="card shadow-sm">
-          <h5 class="fw-light mt-3 text-center">Org Name</h5>
+          <h5 class="fw-light mt-3 text-center">Organization Name</h5>
             <div class="card-body">
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div>
@@ -66,7 +66,7 @@
 
         <div class="col">
           <div class="card shadow-sm">
-          <h5 class="fw-light mt-3 text-center">Org Name</h5>
+          <h5 class="fw-light mt-3 text-center">Organization Name</h5>
             <div class="card-body">
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div>
@@ -85,7 +85,7 @@
 
         <div class="col">
           <div class="card shadow-sm">
-          <h5 class="fw-light mt-3 text-center">Org Name</h5>
+          <h5 class="fw-light mt-3 text-center">Organization Name</h5>
             <div class="card-body">
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div>
@@ -101,67 +101,68 @@
             </div>
           </div>
         </div>
-<!-- sec line-->
-        <div class="col">
-          <div class="card shadow-sm">
-          <h5 class="fw-light mt-3 text-center">Org Name</h5>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-              </div>
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-body-secondary">1 h</small>
-              </div>
+
+        <!-- sec line-->
+                <div class="col">
+                  <div class="card shadow-sm">
+                  <h5 class="fw-light mt-3 text-center">Organization Name</h5>
+                    <div class="card-body">
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-body-secondary">1 h</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card shadow-sm">
+                  <h5 class="fw-light mt-3 text-center">Organization Name</h5>
+                    <div class="card-body">
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-body-secondary">4 h</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card shadow-sm">
+                  <h5 class="fw-light mt-3 text-center">Organization Name</h5>
+                    <div class="card-body">
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-body-secondary">8 h</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
             </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-          <h5 class="fw-light mt-3 text-center">Org Name</h5>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-              </div>
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-body-secondary">4 h</small>
-              </div>
+             </div>
             </div>
-          </div>
-        </div>
 
-        <div class="col">
-          <div class="card shadow-sm">
-          <h5 class="fw-light mt-3 text-center">Org Name</h5>
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-              </div>
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-body-secondary">8 h</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-    </div>
-     </div>
-    </div>
-
-</main>
-@endsection
+        </main>
+        @endsection

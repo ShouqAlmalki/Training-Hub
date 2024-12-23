@@ -36,14 +36,23 @@
             font-size: 14px;
             text-decoration: none;
         }
+       .previous-submissions {
+                   position: absolute;
+                   left:  0;
+                   top:  2;
+                   padding: 10px;
+               }
+
     </style>
     </head>
     <body>
    <!-- Button trigger modal -->
 
+    <div class="position-relative">
+      <div class="position-absolute top-50 start-50"></div>
        <div class="card">
-                     <p class="fw-bold">Submit Reports</p>
-                     {{--<span>Submit Reports</span>--}}
+                     {{--<p class="fw-bold">Submit Reports</p>--}}
+                     <span class="fw-bold">Submit Reports</span>
                      {{--<a class="button" href="{{ route('submission.documents') }}">Submit</a>--}}
                         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                         <button type="button" class="btn btn-primary me-md-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
@@ -53,7 +62,7 @@
                           <div class="modal-dialog">
                             <div class="modal-content">
                               <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Report submission</h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                               </div>
                               <div class="modal-body">
@@ -74,6 +83,7 @@
                               <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
                               <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04"></button>
                               </div>
+
                               <br><br>
                               {{--<button class="btn btn-warning">Cancel</button>--}}
                               <button class="btn btn-success" onclick="submit()">CREATE REPORT</button>
@@ -88,15 +98,18 @@
                           </div>
                         </div>
                       </div>
-
+                  <br><br>
                 <div class="card">
                   <div class="card-body">
-                <span>Previous Submissions</span>
+                  {{--<p class="fw-bold">Previous Submissions</p>--}}
 
-               <a class="button" href="{{ route('submission.previous') }}">View</a>
+               <span class="fw-bold previous-submissions">Previous Submissions</span>
+
+               <a class="" class="button" href="{{ route('submission.previous') }}">View</a>
+
             </div>
         </div>
-
+</div>
 </body>
 
 @endsection
