@@ -40,13 +40,13 @@
   <a class="navbar-brand active" href="{{Route('student.stuHome')}}">Home</a>
 </div>
 <div class="container-fluid">
-  <a class="navbar-brand active" href="">Submitions</a>
+  <a class="navbar-brand active" href="{{Route('student.submission')}}">Submitions</a>
 </div>
 <div class="container-fluid">
-  <a class="navbar-brand active" href="">Experiences</a>
+  <a class="navbar-brand active" href="{{Route('student.experience')}}">Experiences</a>
 </div>
 <div class="container-fluid">
-  <a class="navbar-brand active" href="">Personal Account</a>
+  <a class="navbar-brand active" href="{{Route('student.stuaccount')}}">Personal Account</a>
 </div>
 <div class="container-fluid">
 <a type="button" class="btn btn-outline-danger" href="{{Route('welcome')}}">Sign Out</a>

@@ -4,12 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class TestController extends Controller
-{
-public function home()
-     {
-         return view('student.home');
-     }
+class StudentController extends Controller{
+
+    public function stuHome()
+    {
+        return view('student.stuHome');
+    }
 
      public function submission()
           {

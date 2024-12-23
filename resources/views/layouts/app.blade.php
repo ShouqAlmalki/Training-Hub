@@ -36,7 +36,7 @@
  <nav class="navbar">
                         <div class="container-fluid">
                           <a class="navbar-brand" href="{{route('views.welcome')}}">Training Hub</a>
-                          <a class="nav-link active" aria-current="page" href="{{route('student.home')}}">Home</a>
+                          <a class="nav-link active" aria-current="page" href="{{route('student.stuHome')}}">Home</a>
                           <a class="nav-link active" aria-current="page" href="{{route('student.submission')}}">Submissions</a>
                           <a class="nav-link active" aria-current="page" href="{{route('student.experience')}}">Experiences</a>
                           <a class="nav-link active" aria-current="page" href="{{route('student.stuaccount')}}">Personal Account</a>

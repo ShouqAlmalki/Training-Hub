@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.stu')
 
 @section('title', 'student') Submissions
 

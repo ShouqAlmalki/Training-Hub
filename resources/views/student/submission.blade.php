@@ -1,115 +1,103 @@
-@extends('layouts.app')
+@extends('layouts.stu')
 
 @section('title', 'student')
 
+@push('styles')
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: 60px auto;
+        padding: 20px;
+    }
+
+    .card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #e8fcfc;
+        border: 1px solid #ccc;
+        border-radius: 25px;
+        padding: 15px 20px;
+        margin-bottom: 20px;
+    }
+
+    .button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .previous-submissions {
+        position: absolute;
+        left: 0;
+        top: 2;
+        padding: 10px;
+    }
+</style>
+@endpush
+
 @section('content')
 
+<br><br>
 <div class="container">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-        }
-        .container {
-            align-items: 10px;
-            max-width: 1000px;
-            margin: 60px auto;
-            padding: 20px;
-        }
-        .card {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #e8fcfc;
-            border: 1px solid #ccc;
-            border-radius: 25px;
-            padding: 15px 20px;
-            margin-bottom: 20px;
-        }
-        .button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 14px;
-            text-decoration: none;
-        }
-       .previous-submissions {
-                   position: absolute;
-                   left:  0;
-                   top:  2;
-                   padding: 10px;
-               }
+    <div class="card">
 
-    </style>
-    </head>
-    <body>
-   <!-- Button trigger modal -->
 
-    <div class="position-relative">
-      <div class="position-absolute top-50 start-50"></div>
-       <div class="card">
-                     {{--<p class="fw-bold">Submit Reports</p>--}}
-                     <span class="fw-bold">Submit Reports</span>
-                     {{--<a class="button" href="{{ route('submission.documents') }}">Submit</a>--}}
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button type="button" class="btn btn-primary me-md-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+        <span class="fw-bold">Submit Reports</span>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button type="button" class="btn btn-primary me-md-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Report Submission</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="Type" class="form-label">Type of Report</label>
+                            <input list="Types" name="Type" id="Type" class="form-control">
+                            <datalist id="Types">
+                                <option value="Final">
+                                <option value="Weekly">
+                                <option value="Joining">
+                                <option value="Plan">
+                            </datalist>
                         </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Report submission</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                              <div class="mb-3">
-                              <label for="Types">type of report</label>
-                              <input list="Types" name="Type" id="Type" class="form-control">
-
-                              <datalist id="Types">
-                              <option value="Final">
-                              <option value="Weekly">
-                              <option value="Joining">
-                              <option value="Plan">
-
-                              </datalist>
-
-                              <label for="Types">upload file</label>
-                              <div class="input-group">
-                              <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
-                              <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04"></button>
-                              </div>
-
-                              <br><br>
-                              {{--<button class="btn btn-warning">Cancel</button>--}}
-                              <button class="btn btn-success" onclick="submit()">CREATE REPORT</button>
-                              </form>
-                              </div>
-                              </div>
-                             {{-- <div class="modal-footer">--}}
-                                {{--<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>--}}
-                                {{--<button type="button" class="btn btn-primary">Save changes</button>--}}
-                              </div>
+                        <div class="mb-3">
+                            <label for="inputGroupFile04" class="form-label">Upload File</label>
+                            <div class="input-group">
+                                <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Upload</button>
                             </div>
-                          </div>
                         </div>
-                      </div>
-                  <br><br>
-                <div class="card">
-                  <div class="card-body">
-                  {{--<p class="fw-bold">Previous Submissions</p>--}}
-
-               <span class="fw-bold previous-submissions">Previous Submissions</span>
-
-               <a class="" class="button" href="{{ route('submission.previous') }}">View</a>
-
+                        <button class="btn btn-success" onclick="submit()">Create Report</button>
+                    </div>
+                </div>
             </div>
         </div>
-</div>
-</body>
+    </div>
 
+    <br><br>
+
+    <div class="card">
+        <div class="card-body">
+            <span class="fw-bold previous-submissions">Previous Submissions</span>
+            <a class="button" href="{{ route('submission.previous') }}">View</a>
+        </div>
+    </div>
+</div>
 @endsection
+
