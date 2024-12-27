@@ -40,7 +40,7 @@
   <a class="navbar-brand active" href="{{Route('student.stuHome')}}">Home</a>
 </div>
 <div class="container-fluid">
-  <a class="navbar-brand active" href="{{Route('student.submission')}}">Submitions</a>
+  <a class="navbar-brand active" href="{{Route('student.submission')}}">Submissions</a>
 </div>
 <div class="container-fluid">
   <a class="navbar-brand active" href="{{Route('student.experience')}}">Experiences</a>
