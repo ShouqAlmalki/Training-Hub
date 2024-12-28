@@ -3,9 +3,9 @@
 
 @section('title', 'previous')
 @section('content')
+<br><br>
+ <br><br>
 <h1 class="text-center">Previous submissions</h1>
-
-  <br><br>
   <table class="table mt-4">
     <thead>
       <tr>
