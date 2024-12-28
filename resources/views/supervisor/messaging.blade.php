@@ -106,23 +106,23 @@
         <div class="message-content">
             <p>message content</p>
             <!-- Small "Created" text -->
-            <div class="message-footer">Created</div>
+            <div class="message-footer">Created Date</div>
         </div>
 
         <!-- Subtle Green Message Box with Shadow Effect - Repeated Twice -->
         <div class="message-subtle">
             <p>Created Date</p>
-            <div class="message-footer">Created</div>
+            <div class="message-footer">Created Date</div>
         </div>
 
         <div class="message-subtle">
             <p>Created Date</p>
-            <div class="message-footer">Created</div>
+            <div class="message-footer">Created Date</div>
         </div>
 
         <div class="message-subtle">
             <p>Created Date</p>
-            <div class="message-footer">Created</div>
+            <div class="message-footer">Created Date</div>
         </div>
 
         <!-- Added space between the last message and the input field -->
