@@ -65,6 +65,7 @@
 @endpush
 
 @section('content')
+
 <br><br>
 <h1 class="text-center">Submissions</h1>
 
