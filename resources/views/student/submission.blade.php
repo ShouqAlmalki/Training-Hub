@@ -17,12 +17,12 @@
     }
 
     .container {
-        max-width: 1000px; /* Sets a maximum width for the container */
-        margin: 60px auto; /* Centers the container horizontally with top and bottom spacing */
-        padding: 20px; /* Adds inner spacing */
-        display: flex; /* Enables flex layout for its children */
-        flex-direction: column; /* Stacks child elements vertically */
-        align-items: center; /* Centers child elements horizontally */
+        max-width: 1000px;
+        margin: 60px auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 
