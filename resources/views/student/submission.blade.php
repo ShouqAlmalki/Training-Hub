@@ -1,8 +1,8 @@
 @extends('layouts.stu')
 
 @section('title', 'student')
-
-@push('styles')
+@section('content')
+{{--@push('styles')--}}
 
 <style>
 
@@ -36,10 +36,9 @@
         border-radius: 15px;
         padding: 15px 20px;
         margin-bottom: 20px;
-        width: 100%;
-        max-width: 600px;
+        width: 600%;
+        max-width: 1000px;
     }
-
 
     .button {
         background-color: #007bff;
@@ -53,16 +52,16 @@
     }
 
     .previous-submissions {
-        position: absolute;
+        position: center;
         left: 0;
         top: 2;
-        padding: 10px;
+        padding: 400px;
     }
 
 </style>
 </head>
 <body>
-@endpush
+{{--@endpush--}}
 
 @section('content')
 
@@ -72,8 +71,9 @@
 <div class="container">
     <div class="card">
         <span class="fw-bold">Submit Reports</span>
+
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <button type="button" class="btn btn-primary me-md-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+        <button class="button" type="button" class="btn btn-primary me-md-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
         </div>
         </div>
         <!-- Modal -->
@@ -110,13 +110,18 @@
         </div>
       </div>
 
-    <br><br>
 
-    <div class="card">
-        <div class="card-body">
-            <span class="fw-bold previous-submissions">Previous Submissions</span>
+<div class="container">
+<div class="card">
+      <div class="card-body">
+        <div class="previous submissions">
+            <span class="fw-bold">Previous Submissions</span>
+            <br><br>
+
             <a class="button" href="{{ route('submission.previous') }}">View</a>
         </div>
+
     </div>
+  </div>
 </div>
 @endsection
