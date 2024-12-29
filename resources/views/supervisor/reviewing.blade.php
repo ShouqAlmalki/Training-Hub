@@ -1,36 +1,155 @@
 @extends('layouts.app')
 
-
-@section('title', 'reviewing')
+@section('title', 'Messaging')
 @section('content')
+<br><br>
+<title>Messages and Announcements</title>
+<style>
+    .container {
+        display: flex;
+        justify-content: flex-start; /* Align items to the left */
+        align-items: flex-start;
+        gap: 20px;
+        min-height: 100vh;
+    }
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body>
+    .box {
+        width: 1500px; /* توسعنا المربع ليصبح عرضه أكبر من 1400px */
+        height: 600px; /* يمكن تعديل الارتفاع حسب الحاجة */
+        background-color: lightblue;
+        border: 2px black solid;
+        padding: 10px;
+        text-align: left; /* Align content to the left */
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 30px; /* إضافة المسافة بين المربع والجدول */
+    }
 
+    .box h1 {
+        margin-top: 0;
+    }
 
-    <div class="card">
-      <div class="m-2">
-        Quote
-      </div>
-      <div class="card-body">
-        <blockquote class="blockquote mb-0">
-          <p>A well-known quote, contained in a blockquote element.</p>
-          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-        </blockquote>
-      </div>
+    .select-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end; /* محاذاة المحتوى إلى اليمين */
+        margin-top: -57px; /* رفع مربع الاختيار من الأعلى */
+        gap: 10px; /* المسافة بين العنصرين */
+        align-items: center; /* محاذاة العناصر في الوسط */
+    }
+
+    /* جعل مربع البحث وخانة الاختيار في نفس الارتفاع */
+    .form-select, .search-input {
+        height: 40px; /* نفس الارتفاع لكلا العنصرين */
+    }
+
+    /* تكبير عرض مربع البحث */
+    .search-input {
+        width: 79%; /* جعل عرض مربع البحث أكبر ليأخذ 75% من المساحة */
+    }
+
+    /* تصغير عرض خانة الاختيار */
+    select.form-select {
+        width: 20%; /* جعل عرض خانة الاختيار 20% */
+    }
+    .message-footer {
+        font-size: 12px;
+        color: black;
+        margin-top: 2px;
+    }
+
+    .input-container {
+        margin-top: 20px;
+    }
+
+    .table tbody tr:first-child {
+        background-color: #f2f2f2; /* Light Gray for the first row */
+    }
+
+    /* تنسيق الأسهم داخل الجدول */
+    .table .pagination {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+
+    .table .pagination button {
+        background-color: #f1f1f1;
+        border: 1px solid #ddd;
+        padding: 5px 8px;
+        cursor: pointer;
+        border-radius: 50%;
+        font-size: 12px;
+    }
+
+    .table .pagination button:hover {
+        background-color: #dddddd5a;
+    }
+
+    .table {
+        margin-top: 20px; /* إضافة المسافة بين الجدول والمحتوى الموجود في الأعلى */
+    }
+</style>
+
+<div class="container">
+    <div class="box">
+        <h1 style="color: #006392;">Table of Documents </h1>
+        <div class="mb-3">
+            <!-- Apply the 'search-input' class to the input element to adjust its size -->
+            <input type="text" class="form-control search-input" id="Input" placeholder="Search Table">
+        </div>
+        <div class="select-container">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>select section</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+
+        <table class="table">
+            
+            <thead>
+                <tr>
+                    <th scope="col">Full Name</th>
+                    <th scope="col"></th>
+                    <th scope="col">Reports</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Full Name</th>
+                    <td></td>
+                    <td>Reports</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">Full Name</th>
+                    <td></td>
+                    <td>Reports</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">Full Name</th>
+                    <td></td>
+                    <td>Reports</td>
+                    <td></td>
+                </tr>
+                <!-- الصف الأخير لإضافة الأسهم -->
+                <tr>
+                    <td colspan="3"></td>
+                    <td>
+                        <div class="pagination">
+                            <button>←</button>
+                            <button>→</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
-</html>
-
+</div>
 @endsection
-
-
