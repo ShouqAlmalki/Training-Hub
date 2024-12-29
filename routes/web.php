@@ -44,6 +44,19 @@ Route::get('/student/experience', [\App\Http\Controllers\StudentController::clas
     Route::get('/student', function () {
     return view('student.experience');
 });
+Route::get('/student/newExperience', [\App\Http\Controllers\StudentController::class, 'new'])->name('student.newExperience');
+ Route::get('/student', function () {
+    return view('student.newExperience');
+    });
+    Route::get('/submission/previousExperience', [\App\Http\Controllers\StudentController::class, 'previousExperience'])->name('submission.previousExperience');
+     Route::get('/submission', function () {
+        return view('submission.previousExperience');
+    });
+
+//Route::get('/student/previousExperience', [\App\Http\Controllers\StudentController::class, 'previous'])->name('student.previousExperience');
+ //Route::get('/student', function () {
+    //return view('student.previousExperience');
+//});
 
 Route::get('/student/stuaccount', [\App\Http\Controllers\StudentController::class, 'stuaccount'])->name('student.stuaccount');
     Route::get('/student', function () {

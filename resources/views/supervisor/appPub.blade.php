@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.sup')
 
 @section('title', 'appPub')
 @section('content')
@@ -42,7 +42,7 @@
         align-items: center; /* محاذاة العناصر في الوسط */
     }
 
-   
+
 
     /* تصغير عرض خانة الاختيار */
     select.form-select {
@@ -90,11 +90,11 @@
 <div class="container">
     <div class="box">
         <h1 style="color: #006392;">Approval requests </h1>
-       
-    
+
+
 
         <table class="table">
-            
+
             <thead>
                 <tr>
                     <th scope="col">Orgnization</th>

@@ -1,9 +1,12 @@
-@extends('layouts.sup')
+@extends('layouts.stu')
 
-@section('title', 'Messaging')
+@section('title', 'experience')
 @section('content')
+
+
+
 <br><br>
-<title>Messages and Announcements</title>
+<title>Previous experiences</title>
 <style>
     .container {
         display: flex;
@@ -40,15 +43,7 @@
         align-items: center; /* محاذاة العناصر في الوسط */
     }
 
-    /* جعل مربع البحث وخانة الاختيار في نفس الارتفاع */
-    .form-select, .search-input {
-        height: 40px; /* نفس الارتفاع لكلا العنصرين */
-    }
 
-    /* تكبير عرض مربع البحث */
-    .search-input {
-        width: 79%; /* جعل عرض مربع البحث أكبر ليأخذ 75% من المساحة */
-    }
 
     /* تصغير عرض خانة الاختيار */
     select.form-select {
@@ -92,55 +87,63 @@
         margin-top: 20px; /* إضافة المسافة بين الجدول والمحتوى الموجود في الأعلى */
     }
 </style>
-
+<br><br>
 <div class="container">
     <div class="box">
-        <h1 style="color: #006392;">Table of Documents </h1>
-        <div class="mb-3">
-            <!-- Apply the 'search-input' class to the input element to adjust its size -->
-            <input type="text" class="form-control search-input" id="Input" placeholder="Search Table">
-        </div>
-        <div class="select-container">
-            <select class="form-select" aria-label="Default select example">
-                <option selected>select section</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-            </select>
-        </div>
+    <br><br>
+      <br><br>
+        <h1 style="color: #006392;">Previous experiences</h1>
+
+
 
         <table class="table">
 
             <thead>
                 <tr>
-                    <th scope="col">Full Name</th>
+                    <th scope="col">Orgnization</th>
                     <th scope="col"></th>
-                    <th scope="col">Reports</th>
+                    <th scope="col">Overview</th>
+                    <th scope="col"></th>
+                    <th scope="col">date of training</th>
+                    <th scope="col"></th>
+                    <th scope="col">Rate</th>
                     <th scope="col"></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row">Full Name</th>
+                    <th scope="row"> #Orgnization Name </th>
                     <td></td>
-                    <td>Reports</td>
+                    <td>#Overview of org</td>
                     <td></td>
-                </tr>
-                <tr>
-                    <th scope="row">Full Name</th>
+                    <td>#date of training</td>
                     <td></td>
-                    <td>Reports</td>
+                    <td>#Rate of org</td>
                     <td></td>
                 </tr>
                 <tr>
-                    <th scope="row">Full Name</th>
+                    <th scope="row"> # Orgnization Name</th>
                     <td></td>
-                    <td>Reports</td>
+                    <td>#Overview of org</td>
+                    <td></td>
+                    <td>#date of training</td>
+                    <td></td>
+                    <td>#Rate of org</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row"># Orgnization Name</th>
+                    <td></td>
+                    <td>#Overview of org</td>
+                    <td></td>
+                    <td>#date of training</td>
+                    <td></td>
+                    <td>#Rate of org</td>
                     <td></td>
                 </tr>
                 <!-- الصف الأخير لإضافة الأسهم -->
                 <tr>
-                    <td colspan="3"></td>
+                    <td colspan="5"></td>
                     <td>
                         <div class="pagination">
                             <button>←</button>
@@ -152,4 +155,3 @@
         </table>
     </div>
 </div>
-@endsection

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.sup')
 
 @section('title', 'Messaging')
 @section('content')
@@ -45,7 +45,7 @@
         width: 30%; /* Width for the second select (smaller) */
     }
 
-    select.form-select.tiny { 
+    select.form-select.tiny {
         width: 20%; /* Make the "Select user" dropdown very small */
         margin-right: 10px; /* Add a small gap between the selects */
     }
@@ -138,8 +138,8 @@
             <button class="btn btn-primary" type="button">Send</button>
           </div>
 
-         
-        
+
+
         <style>
             .send-button {
                 background-color: #006392; /* لون الخلفية */
@@ -147,13 +147,13 @@
                 font-size: 16px; /* تغيير حجم النص */
                 transition: background-color 0.3s ease; /* تأثير الانتقال لتغيير اللون */
             }
-        
+
             .send-button:hover {
                 background-color: #004b69; /* تغيير اللون عند التمرير */
                 cursor: pointer; /* تغيير المؤشر عند التمرير */
             }
         </style>
-        
+
 
     </div>
 </div>

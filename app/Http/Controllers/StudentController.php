@@ -36,9 +36,19 @@ class StudentController extends Controller{
                      }
 
                       public function experience()
-                                          {
-                                               return view('student.experience');
-                                          }
+                      {
+                          return view('student.experience');
+                      }
+                      public function newExperience()
+                      {
+                          return view('student.newExperience');
+                      }
+
+                      public function previousExperience()
+                      {
+                          return view('submission.previousExperience');
+                      }
+
 
                        public function stuaccount()
                        {

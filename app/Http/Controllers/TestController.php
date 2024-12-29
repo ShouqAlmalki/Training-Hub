@@ -36,9 +36,9 @@ public function home()
                      }
 
                       public function experience()
-                                          {
-                                               return view('student.experience');
-                                          }
+                      {
+                       return view('student.experience');
+                       }
 
                        public function stuaccount()
                        {
