@@ -143,7 +143,7 @@
                 </tr>
                 <!-- الصف الأخير لإضافة الأسهم -->
                 <tr>
-                    <td colspan="5"></td>
+                    <td colspan="7"></td>
                     <td>
                         <div class="pagination">
                             <button>←</button>
