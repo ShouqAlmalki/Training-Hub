@@ -13,7 +13,6 @@
         }
 </style>
 
-
 <header>
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark " >
   <div class="container-fluid">
@@ -27,18 +26,12 @@
 </nav>
 </header>
 
-
 <main>
-
 <section class="py-5 text-center container">
     <div class="row py-lg-5">
       <div class="py-5 col-lg-6 col-md-8 mx-auto">
         <h1 class="fw-light">Training Hub</h1>
         <p class="lead text-body-secondary">A platform that brings together the student and his supervisor during training. It helps them communicate, attach reports, and share the student’s experience in the institution in which he trained.</p> {{--write about the website. if i want to use the previous sentence (A platform where you can learn and share your journey.)--}}
-        <div class="text">
-          {{--<a type="button" class="btn btn-success me-2"  href="{{route('auth.signin')}}">Sign in</a>--}}
-          {{--<a type="button" class="btn btn-secondary"  href="{{route('auth.signup')}}">Sign up</a>--}}
-        </div>
       </div>
     </div>
   </section>
