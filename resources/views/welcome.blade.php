@@ -11,21 +11,8 @@
     .checked {
          color: orange;
         }
-
-            body {
-                background-image: url('{{ asset('images/rb_8294.png') }}');
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
-            }
 </style>
-<body>
-<div class="body">
 
-<img src="C:\Users\shoog\Downloads\rb_8294.png" class="img-fluid" alt="image">
-
-
-    </div>
 
 <header>
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark " >
@@ -58,6 +45,7 @@
 
   <div class="album py-5 bg-body-tertiary">
     <div class="container">
+    <h2>Recent Experiences</h2>
      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 <select class="form-select" aria-label="Default select example">
     <option value="1">King Abdullah Medical Center</option>
