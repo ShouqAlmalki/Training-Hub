@@ -163,6 +163,39 @@
             </div>
              </div>
             </div>
+         <main>
+             <!-- Add this section for the survey -->
+             <section class="py-5 container">
+                 <div class="row justify-content-center">
+                     <div class="col-lg-6 col-md-8">
+                         <h2 class="text-center fw-light">استطلاع الرأي</h2>
+                         <p class="text-center">ما رأيك في البوابة الخارجية للهيئة؟</p>
+                         <form>
+                             <div class="form-check">
+                                 <input class="form-check-input" type="radio" name="surveyOptions" id="excellent" value="excellent">
+                                 <label class="form-check-label" for="excellent">ممتاز</label>
+                             </div>
+                             <div class="form-check">
+                                 <input class="form-check-input" type="radio" name="surveyOptions" id="veryGood" value="veryGood">
+                                 <label class="form-check-label" for="veryGood">جيد جدا</label>
+                             </div>
+                             <div class="form-check">
+                                 <input class="form-check-input" type="radio" name="surveyOptions" id="good" value="good">
+                                 <label class="form-check-label" for="good">جيد</label>
+                             </div>
+                             <div class="form-check">
+                                 <input class="form-check-input" type="radio" name="surveyOptions" id="needsImprovement" value="needsImprovement">
+                                 <label class="form-check-label" for="needsImprovement">يحتاج إلى تطوير</label>
+                             </div>
+                             <div class="d-flex justify-content-center mt-4">
+                                 <button type="submit" class="btn btn-primary me-2">تصويت</button>
+                                 <button type="button" class="btn btn-outline-secondary">نتيجة التصويت</button>
+                             </div>
+                         </form>
+                     </div>
+                 </div>
+             </section>
+         </main>
 
         </main>
         @endsection
