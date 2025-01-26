@@ -8,7 +8,6 @@ use App\Http\Controllers\StudentController;
 Route::get('/', function () {
     return view('welcome');
 });
-
 Route::get('/', function () {return view('welcome');})->name('welcome');
 
 Route::get('signup',[AuthController::class,'signup'])->name('auth.signup');
