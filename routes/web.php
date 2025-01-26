@@ -1,67 +1,25 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-//use App\Http\Controllers\TestController;
-use App\Http\Controllers\SuperController;
-use App\Http\Controllers\AuthController;
-use App\Http\Controllers\StudentController;
-Route::get('/', function () {
+
+/* Route::get('/', function () {
     return view('welcome');
+}); */
+
+Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('/organization/{orgname}', [DashboardController::class,'fillter'])->name('fillter.orgnization');
+
+/* Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
-Route::get('/', function () {return view('welcome');})->name('welcome');
-
-Route::get('signup',[AuthController::class,'signup'])->name('auth.signup');
-
-Route::post('signup',[AuthController::class,'signupPost'])->name('auth.signup.post');
-
-Route::get('signin',[AuthController::class,'signin'])->name(name: 'auth.signin');
-
-Route::post('signin',[AuthController::class,'signinPost'])->name('auth.signin.post');
-
-//Route::get('/welcome',[\App\Http\Controllers\TestController::class,'welcome'])->name('welcome');
-    Route::get('/welcome', function () {
-    return view('welcome');
-})->name('views.welcome');
-
-
-Route::get('/student/stuHome', [StudentController::class, 'stuHome'])->name('student.stuHome');
-                                 //[AuthController::class,'signin'])->name(name: 'auth.signin');
-
-
-
-
-Route::get('/student/submission', [\App\Http\Controllers\StudentController::class, 'submission'])->name('student.submission');
-
-
-Route::get('/student/experience', [\App\Http\Controllers\StudentController::class, 'experience'])->name('student.experience');
-
-Route::get('/student/newExperience', [\App\Http\Controllers\StudentController::class, 'new'])->name('student.newExperience');
-
-    Route::get('/submission/previousExperience', [\App\Http\Controllers\StudentController::class, 'previousExperience'])->name('submission.previousExperience');
-
-
-
-Route::get('/student/stuaccount', [\App\Http\Controllers\StudentController::class, 'stuaccount'])->name('student.stuaccount');
-
-
-Route::get('/submission/documents', [\App\Http\Controllers\StudentController::class, 'documents'])->name('submission.documents');
-
-
-Route::get('/submission/submission', [\App\Http\Controllers\StudentController::class, 'submission'])->name('submission.submission');
-
-Route::get('/submission/previous', [\App\Http\Controllers\StudentController::class, 'previous'])->name('submission.previous');
-
-
-Route::get('/supervisor/reviewing', [\App\Http\Controllers\StudentController::class, 'reviewing'])->name('supervisor.reviewing');
-
-
-Route::get('/supervisor/appPub', [\App\Http\Controllers\StudentController::class, 'appPub'])->name('supervisor.appPub');
-
-
-Route::get('/supervisor/suphome', [\App\Http\Controllers\StudentController::class, 'suphome'])->name('supervisor.suphome');
-
-
-Route::get('/supervisor/messaging', [\App\Http\Controllers\StudentController::class, 'messaging'])->name('supervisor.messaging');
-
-
+ */
+require __DIR__.'/auth.php';
 

@@ -6,13 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Organization extends Model
 {
+    public $fillable = ['name'];
     public function ratings()
     {
-        return $this->hasMany(Rating::class);
+        return $this->hasMany(OrgRating::class);
     }
-    public function getAverageRatingAttribute(): float
-    {
-        return $this->ratings()->avg('rating') ?? 0; // Calculate the average rating
-    }
-    protected $appends = ['average_rating'];
 }
