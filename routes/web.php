@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Route;
     return view('welcome');
 }); */
 
+
+
 Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 Route::get('/organization/{orgname}', [DashboardController::class,'fillter'])->name('fillter.orgnization');
 
