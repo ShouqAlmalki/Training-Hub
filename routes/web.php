@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 Route::get('/organization/{orgname}', [DashboardController::class,'fillter'])->name('fillter.orgnization');
 
+
 /* Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
