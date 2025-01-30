@@ -42,12 +42,12 @@
                   <input type="text" class="form-control" id="week-6" name="week_6" required>
                 </div>
                 <div class="col-md-6 mt-3 mb-2">
-                  <label for="week-7">Week 7</label>
-                  <input type="text" class="form-control" id="week-7" name="week_7">
+                  <label for="week-7">Week 7 <span class="required">*</span></label>
+                  <input type="text" class="form-control" id="week-7" name="week_7" required>
                 </div>
                 <div class="col-md-6 mt-3 mb-2">
-                  <label for="week-8">Week 8</label>
-                  <input type="text" class="form-control" id="week-8" name="week_8">
+                  <label for="week-8">Week 8 <span class="required">*</span></label>
+                  <input type="text" class="form-control" id="week-8" name="week_8" required>
                 </div>
                 <div class="col-md-12 mt-3 mb-2">
                   <label for="training_tybe">Training Type <span class="required">*</span></label>

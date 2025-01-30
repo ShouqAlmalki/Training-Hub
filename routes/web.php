@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Controllers\DashboardController;
+<?php
+
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -8,11 +11,8 @@ use Illuminate\Support\Facades\Route;
     return view('welcome');
 }); */
 
-
-
 Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 Route::get('/organization/{orgname}', [DashboardController::class,'fillter'])->name('fillter.orgnization');
-
 
 /* Route::get('/dashboard', function () {
     return view('dashboard');
@@ -25,4 +25,3 @@ Route::middleware('auth')->group(function () {
 });
  */
 require __DIR__.'/auth.php';
-
